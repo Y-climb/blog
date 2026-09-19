@@ -3,9 +3,8 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "Yclimb 的博客",
   description: "个人技术学习笔记",
-  // 如果部署到 GitHub Pages 的项目页（username.github.io/仓库名），
-  // 需要把 base 改为 '/仓库名/'
-  base: '/',
+  // GitHub Pages 项目页部署在 https://Y-climb.github.io/blog/
+  base: '/blog/',
   lang: 'zh-CN',
   themeConfig: {
     nav: [
