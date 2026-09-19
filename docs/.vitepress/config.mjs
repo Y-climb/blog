@@ -18,7 +18,8 @@ export default defineConfig({
           { text: 'MySQL 基础知识', link: '/posts/mysql-basics' }
         ]
       },
-      { text: '如何激活office 365', link: '/posts/如何激活office 365' }
+      { text: '电脑软件', 
+        items: [{ text: '如何激活office 365', link: '/posts/如何激活office 365' }] }
     ],
     outline: {
       label: '本页目录',
