@@ -1,3 +1,13 @@
+```markdown
+---
+title: 如何激活office 365
+date: 2026-09-19
+tags:
+  - 电脑软件
+  - office
+---
+```
+
 1.下载office tool plus
 https://otp.landian.vip/zh-cn/download.html
 
