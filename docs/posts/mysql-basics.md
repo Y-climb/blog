@@ -334,3 +334,55 @@ select 字段列表 from 表名 limit 起始索引,查询记录数;
 ### 执行顺序
 
 ![执行顺序](/images/mysql/Pasted%20image%2020260920081748.png)
+
+## DCL-管理用户
+
+### 查询用户
+
+```sql 
+    use mysql;
+```
+```sql 
+select * from user;
+```
+
+### 创建用户
+
+```sql 
+create user ‘用户名’@'主机名' identified by ‘密码’;
+```
+
+### 修改用户密码
+
+```sql 
+alter user '用户名'@'主机名' identified with mysql_native_password by '新密码';
+```
+
+### 删除用户
+```sql 
+drop user '用户名'@'主机名';
+```
+
+::: warning 注意
+- 主机名可以使用%通配。
+- 这类SQL开发人员操作的比较少，主要是DBA(Database Administrator 数据库管理员)使用。
+
+## DCL-权限控制
+### 查询权限
+```sql
+show grants for ‘用户名’@'主机名';
+```
+
+### 授予权限
+```sql
+grant 权限列表 on 数据库名.表名 to '用户名'@'主机名';
+```
+
+### 撤销权限
+```sql
+revoke 权限列表 on 数据库.表名 from '用户名'@'主机名';
+```
+
+::: warning 注意：
+- 多个权限之间，使用逗号分隔。
+- 授权时，数据库名和表名可以使用*进行通配，代表所有。
